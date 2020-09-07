@@ -115,8 +115,8 @@ public class LoginActivity extends BaseFragmentActivity<ActivityLoginViewInterfa
                     //luu trang thai login.
                     AppProvider.getPreferences().saveStatusLogin(true);
                     //goi firebase
-                    FirebaseMessaging.getInstance().subscribeToTopic("pos_notifycation_employee_" + userModel.getId());
-                    FirebaseMessaging.getInstance().subscribeToTopic("pos_notifycation_app_admin");
+//                    FirebaseMessaging.getInstance().subscribeToTopic("pos_notifycation_employee_" + userModel.getId());
+//                    FirebaseMessaging.getInstance().subscribeToTopic("pos_notifycation_app_admin");
                     if (result.getData() != null && result.getData().length > 0) {
                         AppProvider.getPreferences().saveUserModel(userModel);
                     }

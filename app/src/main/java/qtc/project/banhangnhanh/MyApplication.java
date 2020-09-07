@@ -55,11 +55,11 @@ public class MyApplication extends Application {
         ObjectProviderInterface objectProviderInterface = new AppObjectProvider(this);
         AppProvider.init(objectProviderInterface);
 
-        EmployeeModel employeeModel = AppProvider.getPreferences().getUserModel();
-        if (employeeModel!=null){
-            FirebaseMessaging.getInstance().subscribeToTopic("pos_notifycation_employee_" + employeeModel.getId());
-            FirebaseMessaging.getInstance().subscribeToTopic("pos_notifycation_app_admin");
-        }
+//        EmployeeModel employeeModel = AppProvider.getPreferences().getUserModel();
+//        if (employeeModel!=null){
+//            FirebaseMessaging.getInstance().subscribeToTopic("pos_notifycation_employee_" + employeeModel.getId());
+//            FirebaseMessaging.getInstance().subscribeToTopic("pos_notifycation_app_admin");
+//        }
         ACRA.init(this);
 
     }
